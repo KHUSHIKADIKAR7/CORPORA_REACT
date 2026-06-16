@@ -2,27 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Final Hero Image
-const imgHero = `${import.meta.env.BASE_URL}hero/Home_hero.jpg`;
+const imgHero = "/hero/Home_hero.jpg";
 
 // Section 2 Ecosystem Image
-const imgEcosystem = `${import.meta.env.BASE_URL}Other images/corpora-ecosystem-overview.png`;
+const imgEcosystem = "/Other images/corpora-ecosystem-overview.png";
 
 // Section 4 Serve Images
-const imgStudentSuccess = `${import.meta.env.BASE_URL}Other images/hero-student-success.jpg.png`;
-const imgInfrastructure = `${import.meta.env.BASE_URL}Other images/industry-infrastructure-work-01.jpg`;
-const imgPlantOverview = `${import.meta.env.BASE_URL}Other images/industry-plant-overview-01.jpg`;
-const imgEmployers = `${import.meta.env.BASE_URL}Other images/home-employers.jpg`;
+const imgStudentSuccess = "/Other images/hero-student-success.jpg.png";
+const imgInfrastructure = "/Other images/industry-infrastructure-work-01.jpg";
+const imgPlantOverview = "/Other images/industry-plant-overview-01.jpg";
+const imgEmployers = "/Other images/home-employers.jpg";
 
 // Program Images
-const imgRetail = `${import.meta.env.BASE_URL}programs/retail-customer-service.jpg.jpg`;
-const imgPharma = `${import.meta.env.BASE_URL}programs/pharma-healthcare.jpg.jpg`;
-const imgLogistics = `${import.meta.env.BASE_URL}programs/logistics-supply-chain.jpg.jpg`;
-const imgAutomotive = `${import.meta.env.BASE_URL}programs/automobile-manufacturing.jpg.jpg`;
-const imgBfsi = `${import.meta.env.BASE_URL}programs/bfsi-office-support.jpg.jpg`;
-const imgHospitality = `${import.meta.env.BASE_URL}programs/hospitality-tourism.jpg.jpg`;
+const imgRetail = "/programs/retail-customer-service.jpg.jpg";
+const imgPharma = "/programs/pharma-healthcare.jpg.jpg";
+const imgLogistics = "/programs/logistics-supply-chain.jpg.jpg";
+const imgAutomotive = "/programs/automobile-manufacturing.jpg.jpg";
+const imgBfsi = "/programs/bfsi-office-support.jpg.jpg";
+const imgHospitality = "/programs/hospitality-tourism.jpg.jpg";
 
 // Founder Image
-const imgFounder = `${import.meta.env.BASE_URL}founder/founder.jpg.jpg`;
+const imgFounder = "/founder/founder.jpg.jpg";
 
 import './Home.css';
 

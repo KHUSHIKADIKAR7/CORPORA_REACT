@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const modelHeroImg = `${import.meta.env.BASE_URL}hero/learning_model_hero.png`;
+const modelHeroImg = "/hero/learning_model_hero.png";
 import './LearningModel.css';
 
 export default function LearningModel() {

@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Hero Image
-const imgHero = `${import.meta.env.BASE_URL}programs/program.hero.jpg.jpg`;
+const imgHero = "/programs/program.hero.jpg.jpg";
 
 // Program Category Images
-const imgMfg = `${import.meta.env.BASE_URL}programs/automobile-manufacturing.jpg.jpg`;
-const imgPharma = `${import.meta.env.BASE_URL}programs/pharma-healthcare.jpg.jpg`;
-const imgTech = `${import.meta.env.BASE_URL}programs/digital-data.jpg.jpg`;
-const imgApparel = `${import.meta.env.BASE_URL}programs/textile-apparel.jpg.jpg`;
-const imgHospitality = `${import.meta.env.BASE_URL}programs/hospitality-tourism.jpg.jpg`;
-const imgLogistics = `${import.meta.env.BASE_URL}programs/logistics-supply-chain.jpg.jpg`;
+const imgMfg = "/programs/automobile-manufacturing.jpg.jpg";
+const imgPharma = "/programs/pharma-healthcare.jpg.jpg";
+const imgTech = "/programs/digital-data.jpg.jpg";
+const imgApparel = "/programs/textile-apparel.jpg.jpg";
+const imgHospitality = "/programs/hospitality-tourism.jpg.jpg";
+const imgLogistics = "/programs/logistics-supply-chain.jpg.jpg";
 
 import './Programs.css';
 

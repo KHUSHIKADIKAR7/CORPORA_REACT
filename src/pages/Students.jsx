@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 import FinalCta from '../components/FinalCta';
 
 // Static Image Imports for Students page
-const imgCounselling = `${import.meta.env.BASE_URL}Other images/student-career-counselling.jpg.jpg`;
-const imgPractical = `${import.meta.env.BASE_URL}Other images/about-practical-training-session.jpg.jpg`;
-const imgMentorship = `${import.meta.env.BASE_URL}Other images/student-mentorship-discussion-01.jpg.jpg`;
+const imgCounselling = "/Other images/student-career-counselling.jpg.jpg";
+const imgPractical = "/Other images/about-practical-training-session.jpg.jpg";
+const imgMentorship = "/Other images/student-mentorship-discussion-01.jpg.jpg";
 
 // Program Image Imports
-const imgApparel = `${import.meta.env.BASE_URL}programs/textile-apparel.jpg.jpg`;
-const imgAutoMfg = `${import.meta.env.BASE_URL}programs/automobile-manufacturing.jpg.jpg`;
-const imgPharma = `${import.meta.env.BASE_URL}programs/pharma-healthcare.jpg.jpg`;
-const imgHospitality = `${import.meta.env.BASE_URL}programs/hospitality-tourism.jpg.jpg`;
-const imgDigital = `${import.meta.env.BASE_URL}programs/digital-data.jpg.jpg`;
-const imgData = `${import.meta.env.BASE_URL}Other images/industry-technical-skills-01.jpg.jpg`;
-const imgMechatronics = `${import.meta.env.BASE_URL}Other images/industry-factory-machinery-01.jpg.jpg`;
-const imgHealthcare = `${import.meta.env.BASE_URL}Other images/practical-training-session.jpg`;
-const imgRetail = `${import.meta.env.BASE_URL}programs/retail-customer-service.jpg.jpg`;
-const imgLogistics = `${import.meta.env.BASE_URL}programs/logistics-supply-chain.jpg.jpg`;
-const imgBfsi = `${import.meta.env.BASE_URL}programs/bfsi-office-support.jpg.jpg`;
+const imgApparel = "/programs/textile-apparel.jpg.jpg";
+const imgAutoMfg = "/programs/automobile-manufacturing.jpg.jpg";
+const imgPharma = "/programs/pharma-healthcare.jpg.jpg";
+const imgHospitality = "/programs/hospitality-tourism.jpg.jpg";
+const imgDigital = "/programs/digital-data.jpg.jpg";
+const imgData = "/Other images/industry-technical-skills-01.jpg.jpg";
+const imgMechatronics = "/Other images/industry-factory-machinery-01.jpg.jpg";
+const imgHealthcare = "/Other images/practical-training-session.jpg";
+const imgRetail = "/programs/retail-customer-service.jpg.jpg";
+const imgLogistics = "/programs/logistics-supply-chain.jpg.jpg";
+const imgBfsi = "/programs/bfsi-office-support.jpg.jpg";
 
 import './Students.css';
 
