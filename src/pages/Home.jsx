@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const imgHero = `${import.meta.env.BASE_URL}hero/Home_hero.jpg`;
 
 // Section 2 Ecosystem Image
-const imgEcosystem = `${import.meta.env.BASE_URL}Other images/corpora-ecosystem-overview.png.png`;
+const imgEcosystem = `${import.meta.env.BASE_URL}Other images/corpora-ecosystem-overview.png`;
 
 // Section 4 Serve Images
 const imgStudentSuccess = `${import.meta.env.BASE_URL}Other images/hero-student-success.jpg.png`;
