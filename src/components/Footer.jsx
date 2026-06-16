@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoImg from '../../corpora-images/Logo/corpora-logo.png.png';
+const logoImg = `${import.meta.env.BASE_URL}corpora-images/Logo/corpora-logo.png.png`;
 import './Footer.css';
 
 export default function Footer() {

@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 import FinalCta from '../components/FinalCta';
 
 // Static Image Imports for Students page
-import imgCounselling from '../../corpora-images/Other images/student-career-counselling.jpg.jpg';
-import imgPractical from '../../corpora-images/Other images/about-practical-training-session.jpg.jpg';
-import imgMentorship from '../../corpora-images/Other images/student-mentorship-discussion-01.jpg.jpg';
+const imgCounselling = `${import.meta.env.BASE_URL}corpora-images/Other images/student-career-counselling.jpg.jpg`;
+const imgPractical = `${import.meta.env.BASE_URL}corpora-images/Other images/about-practical-training-session.jpg.jpg`;
+const imgMentorship = `${import.meta.env.BASE_URL}corpora-images/Other images/student-mentorship-discussion-01.jpg.jpg`;
 
 // Program Image Imports
-import imgApparel from '../../corpora-images/programs/textile-apparel.jpg.jpg';
-import imgAutoMfg from '../../corpora-images/programs/automobile-manufacturing.jpg.jpg';
-import imgPharma from '../../corpora-images/programs/pharma-healthcare.jpg.jpg';
-import imgHospitality from '../../corpora-images/programs/hospitality-tourism.jpg.jpg';
-import imgDigital from '../../corpora-images/programs/digital-data.jpg.jpg';
-import imgData from '../../corpora-images/Other images/industry-technical-skills-01.jpg.jpg';
-import imgMechatronics from '../../corpora-images/Other images/industry-factory-machinery-01.jpg.jpg';
-import imgHealthcare from '../../corpora-images/Other images/practical-training-session.jpg';
-import imgRetail from '../../corpora-images/programs/retail-customer-service.jpg.jpg';
-import imgLogistics from '../../corpora-images/programs/logistics-supply-chain.jpg.jpg';
-import imgBfsi from '../../corpora-images/programs/bfsi-office-support.jpg.jpg';
+const imgApparel = `${import.meta.env.BASE_URL}corpora-images/programs/textile-apparel.jpg.jpg`;
+const imgAutoMfg = `${import.meta.env.BASE_URL}corpora-images/programs/automobile-manufacturing.jpg.jpg`;
+const imgPharma = `${import.meta.env.BASE_URL}corpora-images/programs/pharma-healthcare.jpg.jpg`;
+const imgHospitality = `${import.meta.env.BASE_URL}corpora-images/programs/hospitality-tourism.jpg.jpg`;
+const imgDigital = `${import.meta.env.BASE_URL}corpora-images/programs/digital-data.jpg.jpg`;
+const imgData = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-technical-skills-01.jpg.jpg`;
+const imgMechatronics = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-factory-machinery-01.jpg.jpg`;
+const imgHealthcare = `${import.meta.env.BASE_URL}corpora-images/Other images/practical-training-session.jpg`;
+const imgRetail = `${import.meta.env.BASE_URL}corpora-images/programs/retail-customer-service.jpg.jpg`;
+const imgLogistics = `${import.meta.env.BASE_URL}corpora-images/programs/logistics-supply-chain.jpg.jpg`;
+const imgBfsi = `${import.meta.env.BASE_URL}corpora-images/programs/bfsi-office-support.jpg.jpg`;
 
 import './Students.css';
 

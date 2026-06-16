@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroBg from '../../corpora-images/hero/career-pathways-hero.jpg';
+const heroBg = `${import.meta.env.BASE_URL}corpora-images/hero/career-pathways-hero.jpg`;
 import './CareerPathways.css';
 
 export default function CareerPathways() {

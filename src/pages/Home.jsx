@@ -2,27 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Final Hero Image
-import imgHero from '../../corpora-images/hero/Home_hero.jpg';
+const imgHero = `${import.meta.env.BASE_URL}corpora-images/hero/Home_hero.jpg`;
 
 // Section 2 Ecosystem Image
-import imgEcosystem from '../../corpora-images/Other images/corpora-ecosystem-overview.png.png';
+const imgEcosystem = `${import.meta.env.BASE_URL}corpora-images/Other images/corpora-ecosystem-overview.png.png`;
 
 // Section 4 Serve Images
-import imgStudentSuccess from '../../corpora-images/Other images/hero-student-success.jpg.png';
-import imgInfrastructure from '../../corpora-images/Other images/industry-infrastructure-work-01.jpg';
-import imgPlantOverview from '../../corpora-images/Other images/industry-plant-overview-01.jpg';
-import imgEmployers from '../../corpora-images/Other images/home-employers.jpg';
+const imgStudentSuccess = `${import.meta.env.BASE_URL}corpora-images/Other images/hero-student-success.jpg.png`;
+const imgInfrastructure = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-infrastructure-work-01.jpg`;
+const imgPlantOverview = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-plant-overview-01.jpg`;
+const imgEmployers = `${import.meta.env.BASE_URL}corpora-images/Other images/home-employers.jpg`;
 
 // Program Images
-import imgRetail from '../../corpora-images/programs/retail-customer-service.jpg.jpg';
-import imgPharma from '../../corpora-images/programs/pharma-healthcare.jpg.jpg';
-import imgLogistics from '../../corpora-images/programs/logistics-supply-chain.jpg.jpg';
-import imgAutomotive from '../../corpora-images/programs/automobile-manufacturing.jpg.jpg';
-import imgBfsi from '../../corpora-images/programs/bfsi-office-support.jpg.jpg';
-import imgHospitality from '../../corpora-images/programs/hospitality-tourism.jpg.jpg';
+const imgRetail = `${import.meta.env.BASE_URL}corpora-images/programs/retail-customer-service.jpg.jpg`;
+const imgPharma = `${import.meta.env.BASE_URL}corpora-images/programs/pharma-healthcare.jpg.jpg`;
+const imgLogistics = `${import.meta.env.BASE_URL}corpora-images/programs/logistics-supply-chain.jpg.jpg`;
+const imgAutomotive = `${import.meta.env.BASE_URL}corpora-images/programs/automobile-manufacturing.jpg.jpg`;
+const imgBfsi = `${import.meta.env.BASE_URL}corpora-images/programs/bfsi-office-support.jpg.jpg`;
+const imgHospitality = `${import.meta.env.BASE_URL}corpora-images/programs/hospitality-tourism.jpg.jpg`;
 
 // Founder Image
-import imgFounder from '../../corpora-images/founder/founder.jpg.jpg';
+const imgFounder = `${import.meta.env.BASE_URL}corpora-images/founder/founder.jpg.jpg`;
 
 import './Home.css';
 
@@ -191,7 +191,7 @@ export default function Home() {
   return (
     <div className="home-page">
       {/* SECTION 1: HERO */}
-      <section className="hero-section">
+      <section className="hero-section" style={{ '--hero-bg-img': `url(${imgHero})` }}>
         <div className="glow-blob blob-hero-1"></div>
         <div className="glow-blob blob-hero-2"></div>
         <div className="container hero-container">
