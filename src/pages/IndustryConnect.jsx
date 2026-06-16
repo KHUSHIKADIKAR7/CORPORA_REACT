@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import FinalCta from '../components/FinalCta';
 
 // Static Image Imports for Industry page
-const imgHero = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-production-team-01.jpg.jpg`;
-const imgBriefing = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-worker-briefing-01.jpg.jpg`;
-const imgTechnical = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-technical-skills-01.jpg.jpg`;
-const imgSafety = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-worker-safety-01.jpg.jpg`;
-const imgTraining = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-hands-on-training-01.jpg.jpg`;
+const imgHero = `${import.meta.env.BASE_URL}Other images/industry-production-team-01.jpg.jpg`;
+const imgBriefing = `${import.meta.env.BASE_URL}Other images/industry-worker-briefing-01.jpg.jpg`;
+const imgTechnical = `${import.meta.env.BASE_URL}Other images/industry-technical-skills-01.jpg.jpg`;
+const imgSafety = `${import.meta.env.BASE_URL}Other images/industry-worker-safety-01.jpg.jpg`;
+const imgTraining = `${import.meta.env.BASE_URL}Other images/industry-hands-on-training-01.jpg.jpg`;
 
 import './IndustryConnect.css';
 

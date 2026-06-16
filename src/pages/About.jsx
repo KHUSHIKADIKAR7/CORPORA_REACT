@@ -2,27 +2,27 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Section 2 Image
-const imgVisionGrowth = `${import.meta.env.BASE_URL}corpora-images/Other images/about-vision-growth.jpg`;
+const imgVisionGrowth = `${import.meta.env.BASE_URL}Other images/about-vision-growth.jpg`;
 
 // Section 5 Image
-const imgPharmaTraining = `${import.meta.env.BASE_URL}corpora-images/Other images/pharma-traning.png.jpg`;
+const imgPharmaTraining = `${import.meta.env.BASE_URL}Other images/pharma-traning.png.jpg`;
 
 // Section 7 Serve Images
-const imgStudentSuccess = `${import.meta.env.BASE_URL}corpora-images/Other images/hero-student-success.jpg.png`;
-const imgInfrastructure = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-infrastructure-work-01.jpg`;
-const imgPlantOverview = `${import.meta.env.BASE_URL}corpora-images/Other images/industry-plant-overview-01.jpg`;
-const imgEmployers = `${import.meta.env.BASE_URL}corpora-images/Other images/home-employers.jpg`;
+const imgStudentSuccess = `${import.meta.env.BASE_URL}Other images/hero-student-success.jpg.png`;
+const imgInfrastructure = `${import.meta.env.BASE_URL}Other images/industry-infrastructure-work-01.jpg`;
+const imgPlantOverview = `${import.meta.env.BASE_URL}Other images/industry-plant-overview-01.jpg`;
+const imgEmployers = `${import.meta.env.BASE_URL}Other images/home-employers.jpg`;
 
 // Program Preview Images
-const imgRetail = `${import.meta.env.BASE_URL}corpora-images/programs/retail-customer-service.jpg.jpg`;
-const imgPharma = `${import.meta.env.BASE_URL}corpora-images/programs/pharma-healthcare.jpg.jpg`;
-const imgLogistics = `${import.meta.env.BASE_URL}corpora-images/programs/logistics-supply-chain.jpg.jpg`;
-const imgAutomotive = `${import.meta.env.BASE_URL}corpora-images/programs/automobile-manufacturing.jpg.jpg`;
-const imgBfsi = `${import.meta.env.BASE_URL}corpora-images/programs/bfsi-office-support.jpg.jpg`;
-const imgHospitality = `${import.meta.env.BASE_URL}corpora-images/programs/hospitality-tourism.jpg.jpg`;
+const imgRetail = `${import.meta.env.BASE_URL}programs/retail-customer-service.jpg.jpg`;
+const imgPharma = `${import.meta.env.BASE_URL}programs/pharma-healthcare.jpg.jpg`;
+const imgLogistics = `${import.meta.env.BASE_URL}programs/logistics-supply-chain.jpg.jpg`;
+const imgAutomotive = `${import.meta.env.BASE_URL}programs/automobile-manufacturing.jpg.jpg`;
+const imgBfsi = `${import.meta.env.BASE_URL}programs/bfsi-office-support.jpg.jpg`;
+const imgHospitality = `${import.meta.env.BASE_URL}programs/hospitality-tourism.jpg.jpg`;
 
 // Section 11 Founder Image
-const imgFounder = `${import.meta.env.BASE_URL}corpora-images/founder/founder.jpg.jpg`;
+const imgFounder = `${import.meta.env.BASE_URL}founder/founder.jpg.jpg`;
 
 import './About.css';
 

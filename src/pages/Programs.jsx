@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Hero Image
-const imgHero = `${import.meta.env.BASE_URL}corpora-images/programs/program.hero.jpg.jpg`;
+const imgHero = `${import.meta.env.BASE_URL}programs/program.hero.jpg.jpg`;
 
 // Program Category Images
-const imgMfg = `${import.meta.env.BASE_URL}corpora-images/programs/automobile-manufacturing.jpg.jpg`;
-const imgPharma = `${import.meta.env.BASE_URL}corpora-images/programs/pharma-healthcare.jpg.jpg`;
-const imgTech = `${import.meta.env.BASE_URL}corpora-images/programs/digital-data.jpg.jpg`;
-const imgApparel = `${import.meta.env.BASE_URL}corpora-images/programs/textile-apparel.jpg.jpg`;
-const imgHospitality = `${import.meta.env.BASE_URL}corpora-images/programs/hospitality-tourism.jpg.jpg`;
-const imgLogistics = `${import.meta.env.BASE_URL}corpora-images/programs/logistics-supply-chain.jpg.jpg`;
+const imgMfg = `${import.meta.env.BASE_URL}programs/automobile-manufacturing.jpg.jpg`;
+const imgPharma = `${import.meta.env.BASE_URL}programs/pharma-healthcare.jpg.jpg`;
+const imgTech = `${import.meta.env.BASE_URL}programs/digital-data.jpg.jpg`;
+const imgApparel = `${import.meta.env.BASE_URL}programs/textile-apparel.jpg.jpg`;
+const imgHospitality = `${import.meta.env.BASE_URL}programs/hospitality-tourism.jpg.jpg`;
+const imgLogistics = `${import.meta.env.BASE_URL}programs/logistics-supply-chain.jpg.jpg`;
 
 import './Programs.css';
 

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import FinalCta from '../components/FinalCta';
 
 // Static Image Imports for Institutions page
-const imgCampus = `${import.meta.env.BASE_URL}corpora-images/Other images/institution-campus-01.jpg`;
-const imgClassroom = `${import.meta.env.BASE_URL}corpora-images/Other images/students-classroom-learning-01.jpg.jpg`;
-const imgPractical = `${import.meta.env.BASE_URL}corpora-images/Other images/about-practical-training-session.jpg.jpg`;
+const imgCampus = `${import.meta.env.BASE_URL}Other images/institution-campus-01.jpg`;
+const imgClassroom = `${import.meta.env.BASE_URL}Other images/students-classroom-learning-01.jpg.jpg`;
+const imgPractical = `${import.meta.env.BASE_URL}Other images/about-practical-training-session.jpg.jpg`;
 
 import './Institutions.css';
 

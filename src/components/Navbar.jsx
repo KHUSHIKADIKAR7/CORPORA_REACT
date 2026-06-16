@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-const logoImg = `${import.meta.env.BASE_URL}corpora-images/Logo/corpora-logo.png.png`;
+const logoImg = `${import.meta.env.BASE_URL}Logo/corpora-logo.png.png`;
 import './Navbar.css';
 
 export default function Navbar() {
