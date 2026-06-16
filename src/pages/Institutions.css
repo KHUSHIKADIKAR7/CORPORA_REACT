@@ -1,0 +1,408 @@
+/* Institutions Hero Section */
+.inst-hero-section {
+  background-color: var(--bg-silver);
+  padding: 0 0 4rem;
+}
+
+.inst-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.inst-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inst-hero-title {
+  margin-bottom: 1.25rem;
+}
+
+.inst-hero-subtext {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.inst-hero-btn-group {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.inst-btn {
+  padding: 12px 24px;
+}
+
+.inst-hero-image-wrapper {
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  aspect-ratio: 4 / 3;
+}
+
+.inst-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 2. Challenge Section */
+.inst-problem-section {
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.inst-problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.inst-problem-title {
+  font-size: var(--h2-size);
+  color: var(--brand-navy);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.inst-problem-text {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* 3. Value & Benefits Rows */
+.inst-gains-section {
+  background-color: var(--bg-light);
+}
+
+.inst-gains-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4.5rem;
+}
+
+.inst-gains-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inst-gains-title {
+  margin-bottom: 0;
+}
+
+.inst-gains-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.inst-gain-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.inst-gain-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-emerald);
+}
+
+.inst-gain-divider {
+  width: 1px;
+  align-self: stretch;
+  background-color: var(--border-color);
+}
+
+.inst-gain-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.inst-gain-row-title {
+  font-size: 1.15rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.inst-gain-row-desc {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+}
+
+/* 4. Partnership Roadmap - Timeline */
+.inst-model-section {
+  background-color: var(--bg-white);
+}
+
+.inst-model-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.inst-model-title {
+  margin-bottom: 0;
+}
+
+.inst-timeline-wrapper {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.inst-timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.inst-timeline-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.inst-timeline-item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3.5rem;
+  position: relative;
+}
+
+.inst-step-marker {
+  position: absolute;
+  left: 14px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--brand-emerald);
+  border: 3px solid var(--bg-white);
+}
+
+.inst-step-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.125rem;
+}
+
+.inst-step-title {
+  font-size: 1.2rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.inst-step-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* 5. Integration Bento Grid */
+.inst-bento-section {
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.inst-bento-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+/* 6. Student Development Collage */
+.inst-experience-section {
+  background-color: var(--bg-white);
+}
+
+.inst-experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.inst-collage-wrapper {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+
+.inst-collage-col .collage-main-img-box {
+  width: 75%;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  border: 1px solid var(--border-color);
+}
+
+.inst-collage-col .collage-sub-img-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  border: 4px solid var(--bg-white);
+}
+
+.inst-text-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.inst-experience-title {
+  margin-bottom: 1rem;
+}
+
+.inst-experience-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.inst-exp-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.inst-exp-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.inst-exp-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--brand-emerald);
+  flex-shrink: 0;
+}
+
+.inst-exp-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 7. Why Partner With Corpora split */
+.inst-why-section {
+  background-color: var(--bg-light);
+}
+
+.inst-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.inst-why-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: sticky;
+  top: 100px;
+}
+
+.inst-why-title {
+  font-size: var(--h2-size);
+  color: var(--brand-navy);
+  line-height: 1.3;
+}
+
+.inst-why-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.25rem;
+}
+
+.inst-why-point {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+  border-left: 4px solid var(--brand-emerald);
+}
+
+.inst-why-point-title {
+  font-size: 1.2rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.inst-why-point-text {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .inst-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .inst-hero-right {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .inst-gains-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .inst-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .inst-why-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .inst-why-left {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .inst-problem-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

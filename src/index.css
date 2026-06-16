@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --brand-navy: #0b0f19;
+  --brand-navy-light: #161e2e;
+  --brand-emerald: #10b981;
+  --brand-emerald-dark: #059669;
+  --brand-emerald-light: #e6fcf5;
+  
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --text-white: #ffffff;
+  
+  --border-color: #f3f4f6;
+  --border-accent: rgba(16, 185, 129, 0.1);
+
+  /* Fonts */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Typography Balanced Sizes */
+  --h1-size: clamp(2rem, 3.2vw, 2.5rem);
+  --h2-size: clamp(1.6rem, 2.5vw, 1.85rem);
+  --h3-size: clamp(1.2rem, 1.8vw, 1.35rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-white);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--brand-navy);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+section,
+.about-section,
+.home-section,
+.section-padding {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: auto;
+}
+
+@media (max-width: 768px) {
+  section,
+  .about-section,
+  .home-section,
+  .section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.section-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.section-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-desc {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.card-grid,
+.cards-grid,
+.feature-grid,
+.program-grid,
+.philosophy-grid,
+.serve-grid,
+.do-grid,
+.programs-grid,
+.model-grid,
+.why-grid,
+.ecosystem-grid,
+.about-intro-highlights-grid {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  gap: 24px !important;
+}
+
+.category-pill {
+  display: inline-block;
+  background-color: var(--brand-emerald-light);
+  color: var(--brand-emerald-dark);
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 30px;
+  font-family: var(--font-heading);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.highlight-pill {
+  display: inline-block;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-emerald);
+  color: var(--text-white);
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-emerald-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-navy);
+  color: var(--text-white);
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-navy-light);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--brand-navy);
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 2px solid var(--brand-navy);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: var(--brand-navy);
+  color: var(--text-white);
+  transform: translateY(-2px);
+}
+
+/* Reusable 3D Cards */
+.card-3d {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0);
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(1deg) rotateY(-1deg) translateY(-8px);
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.08), 0 8px 16px -8px rgba(0, 0, 0, 0.04);
+}
+
+/* Helper text CTA link */
+.text-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--brand-emerald-dark);
+  font-size: 0.95rem;
+}
+
+.text-cta .cta-arrow {
+  transition: transform 0.2s ease;
+}
+
+.text-cta:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* GLOBAL SPACING FIX OVERRIDES */
+
+/* GLOBAL HERO SPACING & TYPOGRAPHY OVERRIDES */
+
+/* 1. Hero Title / H1 Sizing */
+.hero-title,
+.hero h1,
+.hero-section h1,
+.page-hero h1,
+.about-hero-title,
+.programs-hero-title,
+.model-hero-title,
+.pathways-hero-title,
+.insights-hero-title,
+.contact-hero-title,
+.apply-hero-title,
+.students-hero-title,
+.ind-hero-title,
+.inst-hero-title,
+.about-hero-section h1,
+.programs-hero-section h1,
+.model-hero-section h1,
+.pathways-hero h1,
+.insights-hero h1,
+.contact-hero h1,
+.apply-hero h1,
+.students-hero-section h1,
+.ind-hero-section h1,
+.inst-hero-section h1 {
+  font-size: clamp(38px, 4.2vw, 62px) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.035em !important;
+}
+
+/* 2. Hero Paragraph / Subtitle Sizing */
+.hero-subtitle,
+.about-hero-subtitle,
+.programs-hero-subtitle,
+.model-hero-subtext,
+.pathways-hero-subtext,
+.insights-hero-subtext,
+.contact-hero-subtext,
+.apply-hero-subtext,
+.students-hero-subtext,
+.ind-hero-subtext,
+.inst-hero-subtext,
+.hero p,
+.hero-section p,
+.page-hero p,
+.about-hero-section p,
+.programs-hero-section p,
+.model-hero-section p,
+.pathways-hero p,
+.insights-hero p,
+.contact-hero p,
+.apply-hero p,
+.students-hero-section p,
+.ind-hero-section p,
+.inst-hero-section p {
+  font-size: clamp(18px, 1.4vw, 22px) !important;
+  line-height: 1.55 !important;
+  max-width: 680px !important;
+}
+
+/* 3. Hero Heights & Padding */
+.hero,
+.page-hero,
+.programs-hero-section,
+.students-hero-section,
+.ind-hero-section,
+.inst-hero-section {
+  min-height: auto !important;
+  height: auto !important;
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+  margin-top: 0 !important;
+}
+
+/* 4. Full-Background Hero Sizing */
+.full-hero,
+.hero-bg,
+.career-hero,
+.learning-hero,
+.about-hero-section,
+.pathways-hero,
+.insights-hero,
+.model-hero-section,
+.contact-hero,
+.apply-hero,
+.hero-section {
+  min-height: 560px !important;
+  max-height: 680px !important;
+  height: auto !important;
+  padding-top: 72px !important;
+  padding-bottom: 72px !important;
+  margin-top: 0 !important;
+}
+
+/* 5. Responsive / Mobile Hero Sizing */
+@media (max-width: 768px) {
+  .hero-title,
+  .hero h1,
+  .hero-section h1,
+  .page-hero h1,
+  .about-hero-title,
+  .programs-hero-title,
+  .model-hero-title,
+  .pathways-hero-title,
+  .insights-hero-title,
+  .contact-hero-title,
+  .apply-hero-title,
+  .students-hero-title,
+  .ind-hero-title,
+  .inst-hero-title,
+  .about-hero-section h1,
+  .programs-hero-section h1,
+  .model-hero-section h1,
+  .pathways-hero h1,
+  .insights-hero h1,
+  .contact-hero h1,
+  .apply-hero h1,
+  .students-hero-section h1,
+  .ind-hero-section h1,
+  .inst-hero-section h1 {
+    font-size: clamp(34px, 10vw, 46px) !important;
+  }
+
+  .hero,
+  .hero-section,
+  .page-hero,
+  .programs-hero-section,
+  .students-hero-section,
+  .ind-hero-section,
+  .inst-hero-section,
+  .full-hero,
+  .hero-bg,
+  .career-hero,
+  .learning-hero,
+  .about-hero-section,
+  .pathways-hero,
+  .insights-hero,
+  .model-hero-section,
+  .contact-hero,
+  .apply-hero {
+    min-height: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+}
+
+/* 2. Normal Sections Desktop (56px 0) / Mobile (40px 0) */
+section:not(.hero-section):not(.about-hero-section):not(.programs-hero-section):not(.model-hero-section):not(.pathways-hero):not(.insights-hero):not(.contact-hero):not(.apply-hero):not(.students-hero-section):not(.ind-hero-section):not(.inst-hero-section),
+.section-padding:not(.hero-section):not(.about-hero-section):not(.programs-hero-section):not(.model-hero-section):not(.pathways-hero):not(.insights-hero):not(.contact-hero):not(.apply-hero):not(.students-hero-section):not(.ind-hero-section):not(.inst-hero-section) {
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  min-height: auto !important;
+}
+
+@media (max-width: 768px) {
+  section:not(.hero-section):not(.about-hero-section):not(.programs-hero-section):not(.model-hero-section):not(.pathways-hero):not(.insights-hero):not(.contact-hero):not(.apply-hero):not(.students-hero-section):not(.ind-hero-section):not(.inst-hero-section),
+  .section-padding:not(.hero-section):not(.about-hero-section):not(.programs-hero-section):not(.model-hero-section):not(.pathways-hero):not(.insights-hero):not(.contact-hero):not(.apply-hero):not(.students-hero-section):not(.ind-hero-section):not(.inst-hero-section) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* 3. Section Headers Margin-Bottom (28px to 36px only) */
+.section-header,
+.mission-pillars-header,
+.ind-opps-header,
+.ind-gallery-header,
+.ind-lens-header,
+.inst-model-header,
+.inst-bento-header,
+.students-map-header,
+.students-bento-header,
+.students-comparison-header,
+.catalog-header {
+  margin-bottom: 32px !important;
+  margin-top: 0 !important;
+}
+
+/* 4. Card Grids Spacing & Gaps (24px to 32px only) */
+.card-grid,
+.cards-grid,
+.feature-grid,
+.program-grid,
+.philosophy-grid,
+.serve-grid,
+.do-grid,
+.programs-grid,
+.model-grid,
+.why-grid,
+.ecosystem-grid,
+.about-intro-highlights-grid,
+.about-hero-container,
+.about-intro-main-grid,
+.philosophy-container,
+.trust-legacy-grid,
+.founder-grid,
+.hero-container,
+.about-container,
+.ind-hero-grid,
+.ind-gains-grid,
+.inst-hero-grid,
+.inst-gains-grid,
+.inst-experience-grid,
+.inst-why-grid,
+.students-hero-grid,
+.students-experience-grid {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  gap: 28px !important;
+}
+
+/* --- Global Premium Glowing Card System --- */
+
+/* 1. Light Cards styling */
+.glass-card,
+.card-3d,
+.philosophy-card,
+.serve-card,
+.do-card,
+.program-card,
+.model-card,
+.why-card,
+.stat-card,
+.diff-card,
+.gap-card,
+.highlight-card,
+.legacy-founder-card,
+.vision-mission-card,
+.apply-eligibility-card,
+.pathway-wide-card,
+.sector-illustrated-card,
+.support-info-card,
+.help-topic-card,
+.info-detail-card,
+.who-card,
+.gallery-feature-card,
+.gallery-supporting-card,
+.lens-card,
+.article-card,
+.research-doc-card,
+.guide-card,
+.bento-card,
+.catalog-card,
+.check-item-card,
+.build-quality-card,
+.ecosystem-spoke-card,
+.roadmap-card,
+.timeline-step-node-card,
+.why-practical-card,
+.course-style-card,
+.join-card,
+.journey-step-card,
+.skill-card,
+.support-card,
+.comparison-panel {
+  position: relative !important;
+  background: transparent !important; /* Transparent wrapper to hold layout and hover lift */
+  border: none !important;
+  box-shadow: none !important;
+  transition: transform 0.3s ease !important;
+  overflow: visible !important; /* Ensure pseudo-element glows are not clipped */
+}
+
+/* Card White Body Layer */
+.glass-card::after,
+.card-3d::after,
+.philosophy-card::after,
+.serve-card::after,
+.do-card::after,
+.program-card::after,
+.model-card::after,
+.why-card::after,
+.stat-card::after,
+.diff-card::after,
+.gap-card::after,
+.highlight-card::after,
+.legacy-founder-card::after,
+.vision-mission-card::after,
+.apply-eligibility-card::after,
+.pathway-wide-card::after,
+.sector-illustrated-card::after,
+.support-info-card::after,
+.help-topic-card::after,
+.info-detail-card::after,
+.who-card::after,
+.gallery-feature-card::after,
+.gallery-supporting-card::after,
+.lens-card::after,
+.article-card::after,
+.research-doc-card::after,
+.guide-card::after,
+.bento-card::after,
+.catalog-card::after,
+.check-item-card::after,
+.build-quality-card::after,
+.ecosystem-spoke-card::after,
+.roadmap-card::after,
+.timeline-step-node-card::after,
+.why-practical-card::after,
+.course-style-card::after,
+.join-card::after,
+.journey-step-card::after,
+.skill-card::after,
+.support-card::after,
+.comparison-panel::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important; /* Matches card wrapper size exactly */
+  background: #ffffff !important;
+  border-radius: 28px !important;
+  border: 1px solid rgba(16, 185, 129, 0.14) !important;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06) !important;
+  z-index: -1 !important; /* Sits above glow, below card contents */
+  pointer-events: none !important;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Pseudo-element glow for Light Cards */
+.glass-card::before,
+.card-3d::before,
+.philosophy-card::before,
+.serve-card::before,
+.do-card::before,
+.program-card::before,
+.model-card::before,
+.why-card::before,
+.stat-card::before,
+.diff-card::before,
+.gap-card::before,
+.highlight-card::before,
+.legacy-founder-card::before,
+.vision-mission-card::before,
+.apply-eligibility-card::before,
+.pathway-wide-card::before,
+.sector-illustrated-card::before,
+.support-info-card::before,
+.help-topic-card::before,
+.info-detail-card::before,
+.who-card::before,
+.gallery-feature-card::before,
+.gallery-supporting-card::before,
+.lens-card::before,
+.article-card::before,
+.research-doc-card::before,
+.guide-card::before,
+.bento-card::before,
+.catalog-card::before,
+.check-item-card::before,
+.build-quality-card::before,
+.ecosystem-spoke-card::before,
+.roadmap-card::before,
+.timeline-step-node-card::before,
+.why-practical-card::before,
+.course-style-card::before,
+.join-card::before,
+.journey-step-card::before,
+.skill-card::before,
+.support-card::before,
+.comparison-panel::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -14px !important; /* Glow extends outside card boundaries */
+  border-radius: 36px !important;
+  z-index: -2 !important; /* Sits below the white body layer */
+  opacity: 0 !important; /* Hidden by default, appears on hover */
+  background:
+    radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.45), transparent 38%),
+    radial-gradient(circle at 85% 85%, rgba(34, 211, 238, 0.45), transparent 42%) !important;
+  filter: blur(34px) !important;
+  transition: opacity 0.35s ease !important;
+  pointer-events: none !important;
+}
+
+/* 2. Dark Cards glow styling (preserves background gradient/color) */
+.final-cta-card,
+.home-final-cta-card,
+.model-cta-card,
+.programs-cta-card,
+.hub-center-card {
+  position: relative !important;
+  background: transparent !important; /* Transparent wrapper */
+  border: none !important;
+  box-shadow: none !important;
+  transition: transform 0.3s ease !important;
+  overflow: visible !important; /* Ensure pseudo-element glows are not clipped */
+}
+
+/* Dark Card Body Layer */
+.final-cta-card::after,
+.home-final-cta-card::after,
+.model-cta-card::after,
+.programs-cta-card::after,
+.hub-center-card::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-light) 100%) !important;
+  border-radius: 32px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 15px 35px -5px rgba(11, 15, 25, 0.25) !important;
+  z-index: -1 !important; /* Sits above glow, below card contents */
+  pointer-events: none !important;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Pseudo-element glow for Dark Cards */
+.final-cta-card::before,
+.home-final-cta-card::before,
+.model-cta-card::before,
+.programs-cta-card::before,
+.hub-center-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -14px !important;
+  border-radius: 38px !important;
+  z-index: -2 !important; /* Sits below the dark body layer */
+  opacity: 0 !important; /* Hidden by default, appears on hover */
+  background:
+    radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.40), transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(34, 211, 238, 0.45), transparent 45%) !important;
+  filter: blur(28px) !important;
+  transition: opacity 0.35s ease !important;
+  pointer-events: none !important;
+}
+
+/* 3. Hover state for Light Cards */
+.glass-card:hover,
+.card-3d:hover,
+.philosophy-card:hover,
+.serve-card:hover,
+.do-card:hover,
+.program-card:hover,
+.model-card:hover,
+.why-card:hover,
+.stat-card:hover,
+.diff-card:hover,
+.gap-card:hover,
+.highlight-card:hover,
+.legacy-founder-card:hover,
+.vision-mission-card:hover,
+.apply-eligibility-card:hover,
+.pathway-wide-card:hover,
+.sector-illustrated-card:hover,
+.support-info-card:hover,
+.help-topic-card:hover,
+.info-detail-card:hover,
+.who-card:hover,
+.gallery-feature-card:hover,
+.gallery-supporting-card:hover,
+.lens-card:hover,
+.article-card:hover,
+.research-doc-card:hover,
+.guide-card:hover,
+.bento-card:hover,
+.catalog-card:hover,
+.check-item-card:hover,
+.build-quality-card:hover,
+.ecosystem-spoke-card:hover,
+.roadmap-card:hover,
+.timeline-step-node-card:hover,
+.why-practical-card:hover,
+.course-style-card:hover,
+.join-card:hover,
+.journey-step-card:hover,
+.skill-card:hover,
+.support-card:hover,
+.comparison-panel:hover {
+  transform: translateY(-6px) !important;
+}
+
+.glass-card:hover::before,
+.card-3d:hover::before,
+.philosophy-card:hover::before,
+.serve-card:hover::before,
+.do-card:hover::before,
+.program-card:hover::before,
+.model-card:hover::before,
+.why-card:hover::before,
+.stat-card:hover::before,
+.diff-card:hover::before,
+.gap-card:hover::before,
+.highlight-card:hover::before,
+.legacy-founder-card:hover::before,
+.vision-mission-card:hover::before,
+.apply-eligibility-card:hover::before,
+.pathway-wide-card:hover::before,
+.sector-illustrated-card:hover::before,
+.support-info-card:hover::before,
+.help-topic-card:hover::before,
+.info-detail-card:hover::before,
+.who-card:hover::before,
+.gallery-feature-card:hover::before,
+.gallery-supporting-card:hover::before,
+.lens-card:hover::before,
+.article-card:hover::before,
+.research-doc-card:hover::before,
+.guide-card:hover::before,
+.bento-card:hover::before,
+.catalog-card:hover::before,
+.check-item-card:hover::before,
+.build-quality-card:hover::before,
+.ecosystem-spoke-card:hover::before,
+.roadmap-card:hover::before,
+.timeline-step-node-card:hover::before,
+.why-practical-card:hover::before,
+.course-style-card:hover::before,
+.join-card:hover::before,
+.journey-step-card:hover::before,
+.skill-card:hover::before,
+.support-card:hover::before,
+.comparison-panel:hover::before {
+  opacity: 1 !important;
+}
+
+.glass-card:hover::after,
+.card-3d:hover::after,
+.philosophy-card:hover::after,
+.serve-card:hover::after,
+.do-card:hover::after,
+.program-card:hover::after,
+.model-card:hover::after,
+.why-card:hover::after,
+.stat-card:hover::after,
+.diff-card:hover::after,
+.gap-card:hover::after,
+.highlight-card:hover::after,
+.legacy-founder-card:hover::after,
+.vision-mission-card:hover::after,
+.apply-eligibility-card:hover::after,
+.pathway-wide-card:hover::after,
+.sector-illustrated-card:hover::after,
+.support-info-card:hover::after,
+.help-topic-card:hover::after,
+.info-detail-card:hover::after,
+.who-card:hover::after,
+.gallery-feature-card:hover::after,
+.gallery-supporting-card:hover::after,
+.lens-card:hover::after,
+.article-card:hover::after,
+.research-doc-card:hover::after,
+.guide-card:hover::after,
+.bento-card:hover::after,
+.catalog-card:hover::after,
+.check-item-card:hover::after,
+.build-quality-card:hover::after,
+.ecosystem-spoke-card:hover::after,
+.roadmap-card:hover::after,
+.timeline-step-node-card:hover::after,
+.why-practical-card:hover::after,
+.course-style-card:hover::after,
+.join-card:hover::after,
+.journey-step-card:hover::after,
+.skill-card:hover::after,
+.support-card:hover::after,
+.comparison-panel:hover::after {
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}
+
+/* 4. Hover state for Dark Cards */
+.final-cta-card:hover,
+.home-final-cta-card:hover,
+.model-cta-card:hover,
+.programs-cta-card:hover,
+.hub-center-card:hover {
+  transform: translateY(-6px) !important;
+}
+
+.final-cta-card:hover::before,
+.home-final-cta-card:hover::before,
+.model-cta-card:hover::before,
+.programs-cta-card:hover::before,
+.hub-center-card:hover::before {
+  opacity: 1 !important;
+}
+
+.final-cta-card:hover::after,
+.home-final-cta-card:hover::after,
+.model-cta-card:hover::after,
+.programs-cta-card:hover::after,
+.hub-center-card:hover::after {
+  box-shadow: 0 20px 48px rgba(11, 15, 25, 0.35) !important;
+  border-color: rgba(16, 185, 129, 0.25) !important;
+}

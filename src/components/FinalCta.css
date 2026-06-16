@@ -1,0 +1,94 @@
+.final-cta-section {
+  background-color: var(--bg-white);
+  padding: 56px 0;
+}
+
+.final-cta-card {
+  text-align: center;
+  background-color: var(--brand-navy);
+  background-image: radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+  padding: 3.5rem 4rem;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 30px 60px -15px rgba(11, 15, 25, 0.25);
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-pill {
+  display: inline-block;
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--brand-emerald);
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  color: var(--text-white);
+  margin: 1.5rem 0 1rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.cta-desc {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.65;
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.final-cta-card .btn-primary {
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.final-cta-card .btn-primary:hover {
+  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.45);
+}
+
+.final-cta-card .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-white);
+}
+
+.final-cta-card .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .final-cta-card {
+    padding: 3.5rem 2rem;
+    border-radius: 24px;
+  }
+  
+  .cta-desc {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+}

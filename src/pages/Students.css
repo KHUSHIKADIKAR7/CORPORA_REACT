@@ -1,0 +1,649 @@
+/* Students Hero Section */
+.students-hero-section {
+  background-color: var(--bg-white);
+}
+
+.students-hero-section.section-padding {
+  padding-top: 24px;
+}
+
+.students-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.students-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.students-hero-title {
+  margin-bottom: 1.25rem;
+}
+
+.students-hero-subtext {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.students-hero-btn-group {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.students-btn {
+  padding: 12px 24px;
+}
+
+.students-hero-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.students-hero-image-wrapper {
+  position: relative;
+  border-radius: 28px;
+  overflow: visible;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+}
+
+.students-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+}
+
+/* Floating Badges on Hero image */
+.hero-badge {
+  position: absolute;
+  background-color: var(--bg-white);
+  border: 1.5px solid var(--brand-emerald);
+  color: var(--brand-navy);
+  font-family: var(--font-heading);
+  font-size: 0.825rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.12);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.badge-top-left {
+  top: 10%;
+  left: -10%;
+}
+
+.badge-top-right {
+  top: 25%;
+  right: -5%;
+}
+
+.badge-bottom-left {
+  bottom: 30%;
+  left: -5%;
+}
+
+.badge-bottom-right {
+  bottom: 10%;
+  right: -10%;
+}
+
+/* 2. Self Check Section */
+.students-check-section {
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.students-check-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.students-check-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.students-check-title {
+  margin-bottom: 0;
+}
+
+.students-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.check-item-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.01);
+}
+
+.check-box-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background-color: var(--brand-emerald-light);
+  border: 1.5px solid var(--brand-emerald);
+  flex-shrink: 0;
+  position: relative;
+}
+
+.check-box-indicator::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid var(--brand-emerald-dark);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.check-item-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 3. Readiness Map Timelines */
+.students-map-section {
+  background-color: var(--bg-white);
+}
+
+.students-map-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.readiness-map-pathway {
+  position: relative;
+}
+
+.map-dashed-route {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--border-color), var(--border-color) 6px, transparent 6px, transparent 12px);
+  z-index: 1;
+}
+
+.map-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.map-stage-node {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-node-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--brand-emerald);
+  border: 3px solid var(--bg-white);
+  margin-bottom: 0.75rem;
+}
+
+.map-node-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.map-node-title {
+  font-size: 1.1rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.map-node-desc {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* 4. Bento Grid skilling */
+.students-bento-section {
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.students-bento-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.bento-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.bento-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: border-color 0.25s ease;
+}
+
+.bento-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.bento-card.wide {
+  grid-column: span 2;
+}
+
+.bento-card.narrow {
+  grid-column: span 1;
+}
+
+.bento-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-emerald);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.bento-card-title {
+  font-size: 1.25rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.bento-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* 5. Real Learning Experience Collage */
+.students-experience-section {
+  background-color: var(--bg-white);
+}
+
+.students-experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.experience-collage-wrapper {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+
+.collage-main-img-box {
+  width: 75%;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  border: 1px solid var(--border-color);
+}
+
+.collage-sub-img-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  border: 4px solid var(--bg-white);
+}
+
+.collage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-text-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience-title {
+  margin-bottom: 1rem;
+}
+
+.experience-intro-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.experience-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.exp-row-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.exp-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--brand-emerald);
+  flex-shrink: 0;
+}
+
+.exp-row-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 6. Who Can Join chips */
+.students-chips-section {
+  background-color: var(--bg-light);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.students-chips-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 3rem;
+}
+
+.students-chips-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.students-chip {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--brand-navy);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.01);
+}
+
+/* 7. Comparison matrix */
+.students-comparison-section {
+  background-color: var(--bg-white);
+}
+
+.students-comparison-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.comparison-split-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.comparison-panel {
+  border-radius: 24px;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+}
+
+.comparison-panel.before {
+  background-color: rgba(248, 250, 252, 0.6);
+}
+
+.comparison-panel.after {
+  background-color: var(--bg-white);
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.05);
+}
+
+.panel-column-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.comparison-panel.before .panel-column-title {
+  color: var(--brand-navy);
+}
+
+.comparison-panel.after .panel-column-title {
+  color: var(--brand-emerald-dark);
+}
+
+.panel-points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.panel-points-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.point-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.bullet-cross {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.bullet-check {
+  background-color: var(--brand-emerald-light);
+  color: var(--brand-emerald-dark);
+}
+
+.point-text {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Programs Catalog grid */
+.students-programs-catalog {
+  background-color: var(--bg-light);
+}
+
+.catalog-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+}
+
+.catalog-title {
+  margin-bottom: 0.75rem;
+}
+
+.catalog-subtitle {
+  font-size: 1rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.catalog-card {
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.catalog-media {
+  height: 180px;
+  overflow: hidden;
+}
+
+.catalog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog-body {
+  padding: 1.75rem;
+  flex-grow: 1;
+}
+
+.catalog-card-title {
+  font-size: 1.2rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.catalog-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.catalog-footer {
+  padding: 0 1.75rem 1.75rem;
+}
+
+.catalog-card-link {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-blue);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 1024px) {
+  .students-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  
+  .students-hero-right {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .bento-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .bento-card.wide,
+  .bento-card.narrow {
+    grid-column: span 1;
+  }
+  
+  .map-dashed-route {
+    display: none;
+  }
+  
+  .map-stages-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .students-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .students-check-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .comparison-split-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .comparison-panel {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .map-stages-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .hero-badge {
+    display: none;
+  }
+}

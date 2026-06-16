@@ -1,0 +1,353 @@
+/* Industry Hero Section */
+.ind-hero-section {
+  background-color: var(--bg-silver);
+  padding: 0 0 4rem;
+}
+
+.ind-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ind-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ind-hero-title {
+  margin-bottom: 1.25rem;
+}
+
+.ind-hero-subtext {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+}
+
+.ind-hero-btn-group {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ind-btn {
+  padding: 12px 24px;
+}
+
+.ind-hero-image-wrapper {
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.04);
+  aspect-ratio: 4 / 3;
+}
+
+.ind-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 2. Challenge Section */
+.ind-challenge-section {
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ind-challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.ind-challenge-title {
+  font-size: var(--h2-size);
+  color: var(--brand-navy);
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.ind-challenge-text {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* 3. Value for Employers Rows */
+.ind-gains-section {
+  background-color: var(--bg-light);
+}
+
+.ind-gains-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4.5rem;
+}
+
+.ind-gains-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ind-gains-title {
+  margin-bottom: 0;
+}
+
+.ind-gains-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.ind-gain-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ind-gain-num {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-emerald);
+}
+
+.ind-gain-divider {
+  width: 1px;
+  align-self: stretch;
+  background-color: var(--border-color);
+}
+
+.ind-gain-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ind-gain-row-title {
+  font-size: 1.15rem;
+  color: var(--brand-navy);
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.ind-gain-row-desc {
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+}
+
+/* 4. Engagement routes bento */
+.ind-opps-section {
+  background-color: var(--bg-white);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ind-opps-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+/* 5. Real-World Exposure Gallery */
+.ind-gallery-section {
+  background-color: var(--bg-light);
+}
+
+.ind-gallery-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 3.5rem;
+}
+
+.ind-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+}
+
+.gallery-feature-card {
+  background-color: var(--bg-white);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-zoom-box {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-feature-card:hover .gallery-img,
+.gallery-supporting-card:hover .gallery-img {
+  transform: scale(1.03);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 14, 36, 0) 60%, rgba(9, 14, 36, 0.4) 100%);
+}
+
+.gallery-caption {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--brand-navy);
+  padding: 1rem 1.5rem;
+}
+
+.gallery-supporting-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gallery-split-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.gallery-supporting-card {
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-supporting-card .gallery-zoom-box {
+  aspect-ratio: 3 / 2;
+}
+
+/* 6. Readiness Checklist Lens */
+.ind-lens-section {
+  background-color: var(--bg-white);
+}
+
+.ind-lens-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.ind-lens-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.lens-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  transition: border-color 0.25s ease;
+}
+
+.lens-card:hover {
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.lens-card-bullet {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--brand-emerald-light);
+  position: relative;
+  display: block;
+}
+
+.lens-card-bullet::after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 4px;
+  height: 9px;
+  border: solid var(--brand-emerald-dark);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.lens-card-title {
+  font-size: 1.25rem;
+  color: var(--brand-navy);
+  font-weight: 600;
+}
+
+.lens-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .ind-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .ind-hero-right {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .ind-gains-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .ind-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .ind-lens-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ind-challenge-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .gallery-split-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .ind-lens-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
